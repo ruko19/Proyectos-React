@@ -15,13 +15,13 @@ const Login = () => {
 
     const handlesubmit = async (e) => {
         e.preventDefault();
-        setisLoading(true)
+        setisLoading(true);
+
         try {
             const userCredential = await signInWithEmailAndPassword(auth, email, password);
             const user = userCredential.user;
             setisLoading(false)
             navigate('/')
-
 
         } catch (error) {
             setError(true)

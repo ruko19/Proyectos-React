@@ -17,9 +17,9 @@ export const fetchUsers = createAsyncThunk(
             res.forEach((doc) => {
                 const user = { ...doc.data(), id: doc.id }
                 data.push({ ...user })
-            })
+            });
+
             dispatch(getDataUsers({ users: data }))
-            return { ...newUser, id: res }
 
         } catch (error) {
 

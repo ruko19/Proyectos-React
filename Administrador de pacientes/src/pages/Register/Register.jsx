@@ -57,9 +57,6 @@ const Register = () => {
 
     }
 
-    const handlegoole = async () => {
-
-    }
 
 
     return (
