@@ -82,7 +82,8 @@ export const pacientesSlice = createSlice({
     reducers: {
         getDataPacientes: (state, action) => {
             state.pacientes = action.payload.pacientes
-        }
+        },
+
 
     },
     extraReducers: (builder) => {
@@ -108,7 +109,6 @@ export const pacientesSlice = createSlice({
         });
         builder.addCase(updatePacientes.fulfilled, (state, action) => {
             state.ilLoading = false
-
 
             const index = state.pacientes.findIndex(paciente => paciente.id === action.payload.id)
             state.pacientes[index] = action.payload.paciente

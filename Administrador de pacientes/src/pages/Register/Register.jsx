@@ -97,7 +97,7 @@ const Register = () => {
                                     </label>
                                 </div>
                                 <button type='submit' className="btn btn-wide block mx-auto my-4  ">Sign in</button>
-                                <button onClick={handlegoole} className="btn btn-wide block mx-auto  bg-white  ">
+                                <button className="btn btn-wide block mx-auto  bg-white  ">
                                     <div className='flex justify-center items-center gap-3  '>
                                         <FcGoogle className='inline-block' />
                                         Google

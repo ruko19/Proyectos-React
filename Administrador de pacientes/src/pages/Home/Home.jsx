@@ -41,7 +41,7 @@ const Home = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         dispatch(sendPacientes(newPaciente))
-        notifly()
+        notiflySend()
 
     };
     const handleDelete = (id) => {
@@ -137,7 +137,7 @@ const Home = () => {
 
 
                                                 {/* The button to open modal */}
-                                                <label htmlFor={i.id} className="btn">open modal</label>
+                                                <label htmlFor={i.id} className="btn">Editar</label>
 
                                                 {/* Put this part before </body> tag */}
                                                 <input onClick={() => Updatedata(i.id)} type="checkbox" id={i.id} className="modal-toggle" />
